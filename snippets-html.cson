@@ -1,0 +1,98 @@
+'.text.html.basic':
+  'Grid row':
+    'leftLabel': 'GOV.UK'
+    'description': ''
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-grid-row'
+    'body': """
+    <div class="grid-row">
+      $1
+    </div>$2
+    """
+  'Column':
+    'leftLabel': 'GOV.UK'
+    'description': 'Column layout'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-column'
+    'body': """
+    {# Column size class suffixes: full, one-half, one-third, two-thirds, one-quarter #}
+    <div class="column-${1:size}">
+      $2
+    </div>$3
+    """
+  'Column full':
+    'leftLabel': 'GOV.UK'
+    'description': 'Column full-width layout'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-column-full'
+    'body': """
+    <div class="column-full">
+
+    </div>
+    """
+  'Column one-half':
+    'leftLabel': 'GOV.UK'
+    'description': 'Column one-half layout'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-column-one-half'
+    'body': """
+    <div class="column-one-half">
+
+    </div>
+    """
+  'Column one-quarter':
+    'leftLabel': 'GOV.UK'
+    'description': 'Column one-quarter layout'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-column-one-quarter'
+    'body': """
+    <div class="column-one-quarter">
+
+    </div>
+    """
+  'Column two-thirds':
+    'leftLabel': 'GOV.UK'
+    'description': 'Column two-thirds layout'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-column-two-thirds'
+    'body': """
+    <div class="column-two-thirds">
+
+    </div>
+    """
+  'Column one-third':
+    'leftLabel': 'GOV.UK'
+    'description': 'Column one-third layout'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-column-one-third'
+    'body': """
+    <div class="column-one-third">
+
+    </div>
+    """
+  'Column two-thirds/one-third':
+    'leftLabel': 'GOV.UK'
+    'description': 'Column two-thirds/one-third layout'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-column-two-thirds-one-third'
+    'body': """
+    <div class="column-two-thirds">
+
+    </div>
+    <div class="column-one-third">
+
+    </div>
+    """
+  'Column one-third/two-thirds':
+    'leftLabel': 'GOV.UK'
+    'description': 'Column two-thirds/one-third layout'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-column-one-third-two-thirds'
+    'body': """
+    <div class="column-one-third">
+
+    </div>
+    <div class="column-two-thirds">
+
+    </div>
+    """
