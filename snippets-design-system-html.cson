@@ -1,0 +1,380 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+#
+#
+# Add these snippets to your existing '.text.html.basic' snippets.
+#
+# You can find instructions for installing snippets here: https://atom.io/packages/snippets
+#
+
+'.text.html.basic, .text.html.nunjucks':
+
+# ##############################################################################
+# layouts
+# ##############################################################################
+
+  'Grid row':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid row – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/'
+    'prefix': 'gov-grid-row'
+    'body': """
+
+    """
+  'Grid column full':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column full width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#full-width'
+    'prefix': 'gov-grid-column-full'
+    'body': """
+
+    """
+  'Grid column one-half':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column one-half width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-half'
+    'prefix': 'gov-grid-column-one-half'
+    'body': """
+
+    """
+  'Grid column one-quarter':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column one-quarter width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-quarter'
+    'prefix': 'gov-grid-column-one-quarter'
+    'body': """
+
+    """
+  'Grid column two-thirds':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column two-thirds width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#two-thirds'
+    'prefix': 'gov-grid-column-two-thirds'
+    'body': """
+
+    """
+  'Grid column one-third':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column one-third width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-third'
+    'prefix': 'gov-grid-column-one-third'
+    'body': """
+
+    """
+
+# ##############################################################################
+# Typography
+# ##############################################################################
+
+  'Headings':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#headings'
+    'prefix': 'gov-heading'
+    'body': """
+
+    """
+  'Captions':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#headings-with-captions'
+    'prefix': 'gov-caption'
+    'body': """
+
+    """
+  'Paragraph body':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#body'
+    'prefix': 'gov-paragraph-body'
+    'body': """
+
+    """
+  'Paragraph body small':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#body-small'
+    'prefix': 'gov-paragraph-body-small'
+    'body': """
+
+    """
+  'Lead paragraph':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#lead-paragraph'
+    'prefix': 'gov-paragraph-lead'
+    'body': """
+
+    """
+  'Font size override':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#font-size'
+    'prefix': 'gov-font-size'
+    'body': """
+
+    """
+  'Font weight override':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#font-weight'
+    'prefix': 'gov-font-weight'
+    'body': """
+
+    """
+  'Links':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#links'
+    'prefix': 'gov-link'
+    'body': """
+
+    """
+  'Lists':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#lists'
+    'prefix': 'gov-list'
+    'body': """
+
+    """
+  'Bulleted lists':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#bulleted-lists'
+    'prefix': 'gov-list-bulleted'
+    'body': """
+
+    """
+  'Numbered lists':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#numbered-lists'
+    'prefix': 'gov-list-numbered'
+    'body': """
+
+    """
+  'Section break':
+    'leftLabel': 'GOV.UK'
+    'description': ' – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#section-break'
+    'prefix': 'gov-section-break'
+    'body': """
+
+    """
+
+# ##############################################################################
+# Components
+# Forms
+# ##############################################################################
+
+  'Button':
+    'leftLabel': 'GOV.UK'
+    'description': 'Button – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/button/'
+    'prefix': 'gov-form-button'
+    'body': """
+
+    """
+  'Checkboxes':
+      'leftLabel': 'GOV.UK'
+      'description': 'Checkboxes – GOV.UK Design System'
+      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/checkboxes/'
+      'prefix': 'gov-form-checkboxes'
+      'body': """
+
+      """
+  'Radios':
+      'leftLabel': 'GOV.UK'
+      'description': 'Radios – GOV.UK Design System'
+      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/radios/'
+      'prefix': 'gov-form-radios'
+      'body': """
+
+      """
+  'Select':
+      'leftLabel': 'GOV.UK'
+      'description': 'Select – GOV.UK Design System'
+      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/select/'
+      'prefix': 'gov-form-select'
+      'body': """
+
+      """
+  'Text input':
+      'leftLabel': 'GOV.UK'
+      'description': 'Text input – GOV.UK Design System'
+      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/text-input/'
+      'prefix': 'gov-form-input'
+      'body': """
+
+      """
+  'Textarea':
+      'leftLabel': 'GOV.UK'
+      'description': 'Textarea – GOV.UK Design System'
+      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/textarea/'
+      'prefix': 'gov-form-textarea'
+      'body': """
+
+      """
+  'Date input':
+      'leftLabel': 'GOV.UK'
+      'description': 'Date input – GOV.UK Design System'
+      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/date-input/'
+      'prefix': 'gov-form-date'
+      'body': """
+
+      """
+  'File upload':
+      'leftLabel': 'GOV.UK'
+      'description': 'File upload – GOV.UK Design System'
+      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/file-upload/'
+      'prefix': 'gov-form-file'
+      'body': """
+
+      """
+
+# ##############################################################################
+# Components
+# Other
+# ##############################################################################
+
+  'Back link':
+    'leftLabel': 'GOV.UK'
+    'description': 'Back link – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/back-link/'
+    'prefix': 'gov-back-link'
+    'body': """
+
+    """
+  'Breadcrumbs':
+    'leftLabel': 'GOV.UK'
+    'description': 'Breadcrumbs – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/breadcrumbs/'
+    'prefix': 'gov-breadcrumbs'
+    'body': """
+
+    """
+  'Details':
+    'leftLabel': 'GOV.UK'
+    'description': 'Details – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/details/'
+    'prefix': 'gov-details'
+    'body': """
+
+    """
+  'Error summary':
+    'leftLabel': 'GOV.UK'
+    'description': 'Error summary – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/error-summary/'
+    'prefix': 'gov-error-summary'
+    'body': """
+
+    """
+  'Fieldset':
+    'leftLabel': 'GOV.UK'
+    'description': 'Fieldset – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/fieldset/'
+    'prefix': 'gov-fieldset'
+    'body': """
+
+    """
+  'Footer':
+    'leftLabel': 'GOV.UK'
+    'description': 'Footer – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/footer/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Header':
+    'leftLabel': 'GOV.UK'
+    'description': 'Header – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/header/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Inset text':
+    'leftLabel': 'GOV.UK'
+    'description': 'Inset text – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/inset-text/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Panel':
+    'leftLabel': 'GOV.UK'
+    'description': 'Panel – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/panel/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Phase banner':
+    'leftLabel': 'GOV.UK'
+    'description': 'Phase banner – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/phase-banner/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Skip link':
+    'leftLabel': 'GOV.UK'
+    'description': 'Skip link – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/skip-link/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Table':
+    'leftLabel': 'GOV.UK'
+    'description': 'Table – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/table/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Tabs':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tabs – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tabs/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Tags':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tags – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tag/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
+  'Warning text':
+    'leftLabel': 'GOV.UK'
+    'description': 'Warning text – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/warning-text/'
+    'prefix': 'gov-'
+    'body': """
+
+    """
