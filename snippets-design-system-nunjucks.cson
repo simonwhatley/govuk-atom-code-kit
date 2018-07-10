@@ -302,7 +302,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Footer – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/footer/'
-    'prefix': 'gov-'
+    'prefix': 'gov-footer'
     'body': """
 
     """
@@ -310,7 +310,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Header – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/header/'
-    'prefix': 'gov-'
+    'prefix': 'gov-header'
     'body': """
 
     """
@@ -318,7 +318,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Inset text – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/inset-text/'
-    'prefix': 'gov-'
+    'prefix': 'gov-inset-text'
     'body': """
 
     """
@@ -326,7 +326,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Panel – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/panel/'
-    'prefix': 'gov-'
+    'prefix': 'gov-panel'
     'body': """
 
     """
@@ -334,7 +334,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Phase banner – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/phase-banner/'
-    'prefix': 'gov-'
+    'prefix': 'gov-phase-banner'
     'body': """
 
     """
@@ -342,7 +342,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Skip link – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/skip-link/'
-    'prefix': 'gov-'
+    'prefix': 'gov-skip-link'
     'body': """
 
     """
@@ -350,7 +350,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Table – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/table/'
-    'prefix': 'gov-'
+    'prefix': 'gov-table'
     'body': """
 
     """
@@ -358,7 +358,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Tabs – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tabs/'
-    'prefix': 'gov-'
+    'prefix': 'gov-tabs'
     'body': """
 
     """
@@ -366,7 +366,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Tags – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tag/'
-    'prefix': 'gov-'
+    'prefix': 'gov-tag'
     'body': """
 
     """
@@ -374,7 +374,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Warning text – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/warning-text/'
-    'prefix': 'gov-'
+    'prefix': 'gov-warning-text'
     'body': """
 
     """
