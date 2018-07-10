@@ -2,7 +2,7 @@
   # layouts
   'Grid row':
     'leftLabel': 'GOV.UK'
-    'description': ''
+    'description': 'Grid row'
     'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
     'prefix': 'gov-layout-grid-row'
     'body': """
@@ -71,32 +71,7 @@
       $1
     </div>$2
     """
-  # 'Column two-thirds/one-third':
-  #   'leftLabel': 'GOV.UK'
-  #   'description': 'Column two-thirds/one-third layout'
-  #   'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-  #   'prefix': 'gov-layout-column-two-thirds-one-third'
-  #   'body': """
-  #   <div class="column-two-thirds">
-  #     $1
-  #   </div>
-  #   <div class="column-one-third">
-  #     $2
-  #   </div>$3
-  #   """
-  # 'Column one-third/two-thirds':
-  #   'leftLabel': 'GOV.UK'
-  #   'description': 'Column two-thirds/one-third layout'
-  #   'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-  #   'prefix': 'gov-layout-column-one-third-two-thirds'
-  #   'body': """
-  #   <div class="column-one-third">
-  #     $1
-  #   </div>
-  #   <div class="column-two-thirds">
-  #     $2
-  #   </div>$3
-  #   """
+
   # typography
   'Heading 1':
     'leftLabel': 'GOV.UK'
@@ -162,14 +137,6 @@
       $1
     </p>$2
     """
-  # 'Link':
-  #   'leftLabel': 'GOV.UK'
-  #   'description': 'Link'
-  #   'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-links'
-  #   'prefix': 'gov-typography-link'
-  #   'body': """
-  #   <a href="${1:destination}">$2</a>
-  #   """
   'Link back':
     'leftLabel': 'GOV.UK'
     'description': 'Link back'
@@ -248,6 +215,7 @@
       </div>
     </details>$3
     """
+
   # form elements
   'Text input':
     'leftLabel': 'GOV.UK'
@@ -470,4 +438,15 @@
       </label>
       <input type="file" id="file-input">
     </div>$2
+    """
+  'Button':
+    'leftLabel': 'GOV.UK'
+    'description': 'Button'
+    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
+    'prefix': 'gov-form-button'
+    'body': """
+    <div class="form-group form-buttons">
+      {# Style class suffixes: button-primary, button-secondary, button-tertiary #}
+      <input type="submit" class="button ${1:style}" value="${2:text}">$2
+    </div>$3
     """
