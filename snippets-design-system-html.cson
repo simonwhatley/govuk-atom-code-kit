@@ -29,9 +29,10 @@
 
 '.text.html.basic, .text.html.nunjucks':
 
-# ##############################################################################
-# layouts
-# ##############################################################################
+  # ############################################################################
+  # Layouts
+  # Grid rows and columns
+  # ############################################################################
 
   'Grid row':
     'leftLabel': 'GOV.UK'
@@ -39,7 +40,20 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/'
     'prefix': 'gov-grid-row'
     'body': """
-
+    <div class="govuk-grid-row">
+      $1
+    </div>$2
+    """
+  'Grid column':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/'
+    'prefix': 'gov-grid-column'
+    'body': """
+    {# Column size class suffixes: full, one-half, one-third, two-thirds, one-quarter #}
+    <div class="govuk-grid-column-${1:size}">
+      $2
+    </div>$3
     """
   'Grid column full':
     'leftLabel': 'GOV.UK'
@@ -47,7 +61,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#full-width'
     'prefix': 'gov-grid-column-full'
     'body': """
-
+    <div class="govuk-grid-column-full">
+      $1
+    </div>$2
     """
   'Grid column one-half':
     'leftLabel': 'GOV.UK'
@@ -55,7 +71,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-half'
     'prefix': 'gov-grid-column-one-half'
     'body': """
-
+    <div class="govuk-grid-column-one-half">
+      $1
+    </div>$2
     """
   'Grid column one-quarter':
     'leftLabel': 'GOV.UK'
@@ -63,7 +81,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-quarter'
     'prefix': 'gov-grid-column-one-quarter'
     'body': """
-
+    <div class="govuk-grid-column-one-quarter">
+      $1
+    </div>$2
     """
   'Grid column two-thirds':
     'leftLabel': 'GOV.UK'
@@ -71,7 +91,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#two-thirds'
     'prefix': 'gov-grid-column-two-thirds'
     'body': """
-
+    <div class="govuk-grid-column-two-thirds">
+      $1
+    </div>$2
     """
   'Grid column one-third':
     'leftLabel': 'GOV.UK'
@@ -79,12 +101,94 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-third'
     'prefix': 'gov-grid-column-one-third'
     'body': """
-
+    <div class="govuk-grid-column-one-third">
+      $1
+    </div>$2
+    """
+  'Layout two-thirds / one-third':
+    'leftLabel': 'GOV.UK'
+    'description': 'Layout two-thirds / one-third columns – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#two-thirds-one-third'
+    'prefix': 'gov-layout-two-thirds-one-third'
+    'body': """
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        $1
+      </div>
+      <div class="govuk-grid-column-one-third">
+        $2
+      </div>
+    </div>$3
+    """
+  'Layout one-third / two-thirds':
+    'leftLabel': 'GOV.UK'
+    'description': 'Layout one-third / two-thirds columns – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#two-thirds-one-third'
+    'prefix': 'gov-layout-one-third-two-thirds'
+    'body': """
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        $1
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        $2
+      </div>
+    </div>$3
     """
 
-# ##############################################################################
-# Typography
-# ##############################################################################
+  # ############################################################################
+  # Layouts
+  # Sections and groups
+  # ############################################################################
+
+  'Form section':
+    'leftLabel': 'GOV.UK'
+    'description': 'Form section – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/'
+    'prefix': 'gov-form-section'
+    'body': """
+    <div class="govuk-form-section">
+      $1
+    </div>$2
+    """
+  'Form group':
+    'leftLabel': 'GOV.UK'
+    'description': 'Form group – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/'
+    'prefix': 'gov-form-group'
+    'body': """
+    <div class="govuk-form-group">
+      $1
+    </div>$2
+    """
+  'Form fieldset':
+    'leftLabel': 'GOV.UK'
+    'description': 'Form fieldset – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/fieldset/'
+    'prefix': 'gov-form-fieldset'
+    'body': """
+    <fieldset class="govuk-fieldset">
+      <!-- Size modifiers: xl, l, m -->
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--${1:xl}">
+        <h1 class="govuk-fieldset__heading">
+          ${2:Legend text}
+        </h1>
+      </legend>
+    </fieldset>$3
+    """
+  'Section break':
+    'leftLabel': 'GOV.UK'
+    'description': 'Section break – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#section-break'
+    'prefix': 'gov-section-break'
+    'body': """
+    <!-- Size modifiers: xl, l, m -->
+    <hr class="govuk-section-break govuk-section-break--${1:size} govuk-section-break--visible">
+    """
+
+  # ############################################################################
+  # Typography
+  # ############################################################################
 
   'Headings':
     'leftLabel': 'GOV.UK'
@@ -92,7 +196,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#headings'
     'prefix': 'gov-heading'
     'body': """
-
+    <h${1:1} class="govuk-heading-${2:xl|l|m}">
+      $3
+    </h${1:1}>$4
     """
   'Captions':
     'leftLabel': 'GOV.UK'
@@ -100,7 +206,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#headings-with-captions'
     'prefix': 'gov-caption'
     'body': """
-
+    <span class="govuk-caption-${1:xl|l|m}">
+      $2
+    </span>$3
     """
   'Paragraph body':
     'leftLabel': 'GOV.UK'
@@ -108,7 +216,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#body'
     'prefix': 'gov-paragraph-body'
     'body': """
-
+    <p class="govuk-body">
+      $1
+    <p>$2
     """
   'Paragraph body small':
     'leftLabel': 'GOV.UK'
@@ -116,7 +226,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#body-small'
     'prefix': 'gov-paragraph-body-small'
     'body': """
-
+    <p class="govuk-body-s">
+      $1
+    <p>$2
     """
   'Lead paragraph':
     'leftLabel': 'GOV.UK'
@@ -124,7 +236,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#lead-paragraph'
     'prefix': 'gov-paragraph-lead'
     'body': """
-
+    <p class="govuk-body-l">
+      $1
+    <p>$2
     """
   'Font size override':
     'leftLabel': 'GOV.UK'
@@ -132,7 +246,10 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#font-size'
     'prefix': 'gov-font-size'
     'body': """
-
+    <!-- Font sizes: 80, 48, 36, 27, 24, 19, 16, 14 -->
+    <p class="govuk-body govuk-!-font-size-${1:size}">
+      $2
+    <p>$3
     """
   'Font weight override':
     'leftLabel': 'GOV.UK'
@@ -140,7 +257,10 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#font-weight'
     'prefix': 'gov-font-weight'
     'body': """
-
+    <!-- Font weights: regular, bold -->
+    <p class="govuk-body govuk-!-font-weight-${1:bold}">
+      $2
+    <p>$3
     """
   'Links':
     'leftLabel': 'GOV.UK'
@@ -148,7 +268,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#links'
     'prefix': 'gov-link'
     'body': """
-
+    <a href="${1:#}" class="govuk-link">
+      $2
+    </a>$3
     """
   'Lists':
     'leftLabel': 'GOV.UK'
@@ -156,7 +278,17 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#lists'
     'prefix': 'gov-list'
     'body': """
-
+    <ul class="govuk-list">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
     """
   'Bulleted lists':
     'leftLabel': 'GOV.UK'
@@ -164,7 +296,11 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#bulleted-lists'
     'prefix': 'gov-list-bulleted'
     'body': """
-
+    <ul class="govuk-list govuk-list--bullet">
+      <li>${1:List item}</li>
+      <li>${2:List item}</li>
+      <li>${3:List item}</li>
+    </ul>$4
     """
   'Numbered lists':
     'leftLabel': 'GOV.UK'
@@ -172,21 +308,17 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#numbered-lists'
     'prefix': 'gov-list-numbered'
     'body': """
-
-    """
-  'Section break':
-    'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
-    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#section-break'
-    'prefix': 'gov-section-break'
-    'body': """
-
+    <ul class="govuk-list govuk-list--number">
+      <li>${1:List item}</li>
+      <li>${2:List item}</li>
+      <li>${3:List item}</li>
+    </ul>$4
     """
 
-# ##############################################################################
-# Components
-# Forms
-# ##############################################################################
+  # ############################################################################
+  # Components
+  # Forms
+  # ############################################################################
 
   'Button':
     'leftLabel': 'GOV.UK'
@@ -194,69 +326,261 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/button/'
     'prefix': 'gov-form-button'
     'body': """
-
+    <button type="submit" class="govuk-button">
+      ${1:Button label text}
+    </button>$2
     """
   'Checkboxes':
-      'leftLabel': 'GOV.UK'
-      'description': 'Checkboxes – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/checkboxes/'
-      'prefix': 'gov-form-checkboxes'
-      'body': """
-
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Checkboxes – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/checkboxes/'
+    'prefix': 'gov-form-checkboxes'
+    'body': """
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="$1-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            ${2:Legend text}
+          </h1>
+        </legend>
+        <span id="$1-hint" class="govuk-hint">
+          ${3:Hint text}
+        </span>
+        <div class="govuk-checkboxes">
+          ${4:Use gov-form-checkbox-option snippet}
+        </div>
+      </fieldset>
+    </div>$5
+    """
+  'Checkbox option':
+    'leftLabel': 'GOV.UK'
+    'description': 'Checkbox option – GOV.UK Design System'
+    'prefix': 'gov-form-checkbox-option'
+    'body': """
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="${1:name}-1" name="${1:name}" type="checkbox" value="${2:value}">
+      <label class="govuk-label govuk-checkboxes__label" for="${1:name}-1">
+        ${3:Label text}
+      </label>
+    </div>$4
+    """
   'Radios':
-      'leftLabel': 'GOV.UK'
-      'description': 'Radios – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/radios/'
-      'prefix': 'gov-form-radios'
-      'body': """
-
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Radios – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/radios/'
+    'prefix': 'gov-form-radios'
+    'body': """
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="$1-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            ${2:Legend text}
+          </h1>
+        </legend>
+        <span id="$1-hint" class="govuk-hint">
+          ${3:Hint text}
+        </span>
+        <div class="govuk-radios"><!-- Optional class: govuk-radios--inline -->
+          ${4:Use gov-form-radio-option snippet}
+        </div>
+      </fieldset>
+    </div>$5
+    """
+  'Radio option':
+    'leftLabel': 'GOV.UK'
+    'description': 'Radio option – GOV.UK Design System'
+    'prefix': 'gov-form-radio-option'
+    'body': """
+    <div class="govuk-cradios__item">
+      <input class="govuk-radios__input" id="${1:name}-1" name="${1:name}" type="radio" value="${2:value}">
+      <label class="govuk-label govuk-radios__label" for="${1:name}-1">
+        ${3:Label text}
+      </label>
+    </div>$4
+    """
   'Select':
-      'leftLabel': 'GOV.UK'
-      'description': 'Select – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/select/'
-      'prefix': 'gov-form-select'
-      'body': """
-
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Select – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/select/'
+    'prefix': 'gov-form-select'
+    'body': """
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="${1:name}">
+        ${2:Label text}
+      </label>
+      <select class="govuk-select" id="${1:name}" name="${1:name}">
+        ${3:Use gov-form-select-option snippet}
+      </select>
+    </div>$4
+    """
+  'Select option':
+    'leftLabel': 'GOV.UK'
+    'description': 'Select option – GOV.UK Design System'
+    'prefix': 'gov-form-select-option'
+    'body': """
+    <option value="${1:value}">${2:label text}</option>$3
+    """
   'Text input':
-      'leftLabel': 'GOV.UK'
-      'description': 'Text input – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/text-input/'
-      'prefix': 'gov-form-input'
-      'body': """
-
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Text input – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/text-input/'
+    'prefix': 'gov-form-input'
+    'body': """
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="${1:name}">
+        ${2:Label text}
+      </label>
+      <span id="${1:name}-hint" class="govuk-hint">
+        ${3:Hint text}
+      </span>
+      <input class="govuk-input" id="${1:name}" name="${1:name}" type="text" aria-describedby="${1:name}-hint">
+    </div>$4
+    """
   'Textarea':
-      'leftLabel': 'GOV.UK'
-      'description': 'Textarea – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/textarea/'
-      'prefix': 'gov-form-textarea'
-      'body': """
+    'leftLabel': 'GOV.UK'
+    'description': 'Textarea – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/textarea/'
+    'prefix': 'gov-form-textarea'
+    'body': """
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="${1:name}">
+        ${2:Label text}
+      </label>
+      <span id="${1:name}-hint" class="govuk-hint">
+        ${3:Hint text}
+      </span>
+      <textarea class="govuk-textarea" id="${1:name}" name="${1:name}" rows="5" aria-describedby="${1:name}-hint"></textarea>
+    </div>
+    """
 
-      """
+  # ############################################################################
+  # Components
+  # Form patterns
+  # ############################################################################
+
+  'Address':
+    'leftLabel': 'GOV.UK'
+    'description': 'Addresses – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/patterns/addresses/'
+    'prefix': 'gov-form-address'
+    'body': """
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          What is your address?
+        </h1>
+      </legend>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-1">
+          Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+        </label>
+        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-town">
+          Town or city
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-county">
+          County
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-postcode">
+          Postcode
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+      </div>
+    </fieldset>
+    """
   'Date input':
-      'leftLabel': 'GOV.UK'
-      'description': 'Date input – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/date-input/'
-      'prefix': 'gov-form-date'
-      'body': """
-
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Date input – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/date-input/'
+    'prefix': 'gov-form-date'
+    'body': """
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="${1:name}-hint" role="group">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            ${2:Date}
+          </h1>
+        </legend>
+        <span id="${1:name}-hint" class="govuk-hint">
+          ${3:For example, 31 3 1980}
+        </span>
+        <div class="govuk-date-input" id="${1:name}">
+          <div class="govuk-date-input__item govuk-date-input__item--day">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="${1:name}-day">
+              Day
+            </label>
+              <input class="govuk-input govuk-date-input__input" id="${1:name}-day" name="${1:name}-day" type="number" pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="govuk-date-input__item govuk-date-input__item--month">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="${1:name}-month">
+              Month
+            </label>
+              <input class="govuk-input govuk-date-input__input" id="${1:name}-month" name="${1:name}-month" type="number" pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="govuk-date-input__item govuk-date-input__item--year">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="${1:name}-year">
+              Year
+            </label>
+              <input class="govuk-input govuk-date-input__input" id="${1:name}-year" name="${1:name}-year" type="number" pattern="[0-9]*">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>$4
+    """
   'File upload':
-      'leftLabel': 'GOV.UK'
-      'description': 'File upload – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/file-upload/'
-      'prefix': 'gov-form-file'
-      'body': """
+    'leftLabel': 'GOV.UK'
+    'description': 'File upload – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/file-upload/'
+    'prefix': 'gov-form-file'
+    'body': """
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="${1:file-upload}-1">
+        ${2:Upload a file}
+      </label>
+      <input class="govuk-file-upload" id="${1:file-upload}-1" name="${1:file-upload}-1" type="file">
+    </div>$3
+    """
+  'National Insurance number (NINO)':
+    'leftLabel': 'GOV.UK'
+    'description': 'National Insurance number (NINO) – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/patterns/national-insurance-numbers/'
+    'prefix': 'gov-form-nino'
+    'body': """
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="national-insurance-number">
+        National insurance number
+      </label>
+      <span id="national-insurance-number-hint" class="govuk-hint">
+        It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.
+      </span>
+      <input class="govuk-input govuk-input--width-10" id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
+    </div>$1
+    """
 
-      """
-
-# ##############################################################################
-# Components
-# Other
-# ##############################################################################
+  # ############################################################################
+  # Components
+  # Other
+  # ############################################################################
 
   'Back link':
     'leftLabel': 'GOV.UK'
@@ -264,7 +588,7 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/back-link/'
     'prefix': 'gov-back-link'
     'body': """
-
+    <a href="${1:#}" class="govuk-back-link">Back</a>$2
     """
   'Breadcrumbs':
     'leftLabel': 'GOV.UK'
@@ -272,7 +596,17 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/breadcrumbs/'
     'prefix': 'gov-breadcrumbs'
     'body': """
-
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">${1:Breadcrumb item}</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">${2:Breadcrumb item}</a>
+        </li>$3
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">${4:Breadcrumb item current}</li>
+      </ol>
+    </div>$5
     """
   'Details':
     'leftLabel': 'GOV.UK'
@@ -280,7 +614,16 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/details/'
     'prefix': 'gov-details'
     'body': """
-
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          ${1:Summary text}
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        ${2:Text}
+      </div>
+    </details>$3
     """
   'Error summary':
     'leftLabel': 'GOV.UK'
@@ -288,15 +631,21 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/error-summary/'
     'prefix': 'gov-error-summary'
     'body': """
-
-    """
-  'Fieldset':
-    'leftLabel': 'GOV.UK'
-    'description': 'Fieldset – GOV.UK Design System'
-    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/fieldset/'
-    'prefix': 'gov-fieldset'
-    'body': """
-
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">
+        There is a problem
+      </h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#item-1-error">${1:Error item}</a>
+          </li>
+          <li>
+            <a href="#item-2-error">${2:Error item}</a>
+          </li>$3
+        </ul>
+      </div>
+    </div>$4
     """
   'Footer':
     'leftLabel': 'GOV.UK'
@@ -304,7 +653,32 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/footer/'
     'prefix': 'gov-footer'
     'body': """
+    <footer class="govuk-footer " role="contentinfo">
+      <div class="govuk-width-container ">
+        <div class="govuk-footer__meta">
+          <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
 
+            <svg role="presentation" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483.2 195.7" height="17" width="41">
+              <path
+                fill="currentColor"
+                d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+              />
+            </svg>
+            <span class="govuk-footer__licence-description">
+              All content is available under the
+              <a
+                class="govuk-footer__link"
+                href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                rel="license"
+              >Open Government Licence v3.0</a>, except where otherwise stated
+            </span>
+          </div>
+          <div class="govuk-footer__meta-item">
+            <a class="govuk-footer__link govuk-footer__copyright-logo" href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>$1
     """
   'Header':
     'leftLabel': 'GOV.UK'
@@ -312,7 +686,37 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/header/'
     'prefix': 'gov-header'
     'body': """
-
+    <header class="govuk-header " role="banner" data-module="header">
+      <div class="govuk-header__container govuk-width-container">
+        <div class="govuk-header__logo">
+          <a href="${1:#}" class="govuk-header__link govuk-header__link--homepage">
+            <span class="govuk-header__logotype">
+              <svg
+                role="presentation"
+                focusable="false"
+                class="govuk-header__logotype-crown"
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 132 97"
+                height="32"
+                width="36"
+              >
+                <path
+                  fill="currentColor" fill-rule="evenodd"
+                  d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"
+                ></path>
+                <image src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image"></image>
+              </svg>
+              <span class="govuk-header__logotype-text">
+                GOV.UK
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="govuk-header__content">
+          $2
+        </div>
+      </div>
+    </header>$3
     """
   'Inset text':
     'leftLabel': 'GOV.UK'
@@ -320,7 +724,9 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/inset-text/'
     'prefix': 'gov-inset-text'
     'body': """
-
+    <div class="govuk-inset-text">
+      ${1:Text}
+    </div>
     """
   'Panel':
     'leftLabel': 'GOV.UK'
@@ -328,7 +734,14 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/panel/'
     'prefix': 'gov-panel'
     'body': """
-
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h2 class="govuk-panel__title">
+        ${1:Title text}
+      </h2>
+      <div class="govuk-panel__body">
+        Your reference number<br><strong>$2</strong>
+      </div>
+    </div>$3
     """
   'Phase banner':
     'leftLabel': 'GOV.UK'
@@ -336,7 +749,16 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/phase-banner/'
     'prefix': 'gov-phase-banner'
     'body': """
-
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag ">
+          ${1:Alpha|Beta}
+        </strong>
+        <span class="govuk-phase-banner__text">
+          ${2:This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.}
+        </span>
+      </p>
+    </div>$3
     """
   'Skip link':
     'leftLabel': 'GOV.UK'
@@ -344,7 +766,7 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/skip-link/'
     'prefix': 'gov-skip-link'
     'body': """
-
+    <a href="#content" class="govuk-skip-link">Skip to main content</a>$1
     """
   'Table':
     'leftLabel': 'GOV.UK'
@@ -358,17 +780,53 @@
     'leftLabel': 'GOV.UK'
     'description': 'Tabs – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tabs/'
-    'prefix': 'gov-tabs'
+    'prefix': 'gov-tab'
     'body': """
+    <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
 
+      <ul class="govuk-tabs__list">
+
+        ${1:Use gov-tab-item snippet}
+
+      </ul>
+
+      ${2:Use gov-tab-section snippet}
+
+    </div>$3
     """
-  'Tags':
+  'Tab item':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tab item – GOV.UK Design System'
+    'prefix': 'gov-tab-item'
+    'body': """
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#${1:section-name}">
+          ${2:Tab label}
+        </a>
+    </li>$3
+    """
+  'Tab section':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tabs – GOV.UK Design System'
+    'prefix': 'gov-tab-section'
+    'body': """
+    <section class="govuk-tabs__panel" id="${1:section-name}">
+      <h2 class="govuk-heading-l">${2:Section heading}</h2>
+
+    </section>$3
+    """
+  'Tag':
     'leftLabel': 'GOV.UK'
     'description': 'Tags – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tag/'
     'prefix': 'gov-tag'
     'body': """
-
+    <strong class="govuk-tag">
+      ${1:Tag label}
+    </strong>$2
     """
   'Warning text':
     'leftLabel': 'GOV.UK'
@@ -376,5 +834,11 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/warning-text/'
     'prefix': 'gov-warning-text'
     'body': """
-
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">${1:Fallback text}</span>
+        ${2:Warning text}
+      </strong>
+    </div>$3
     """
