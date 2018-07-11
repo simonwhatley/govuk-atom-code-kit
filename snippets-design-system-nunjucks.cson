@@ -330,114 +330,114 @@
     }) }}$2
     """
   'Checkboxes':
-      'leftLabel': 'GOV.UK'
-      'description': 'Checkboxes – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/checkboxes/'
-      'prefix': 'gov-form-checkboxes'
-      'body': """
-      {{ govukCheckboxes({
-        idPrefix: "$1",
-        name: "$1",
-        fieldset: {
-          legend: {
-            text: "${2:Legend text}",
-            isPageHeading: ${3:true},
-            classes: "govuk-fieldset__legend--${4:xl}"
-          }
-        },
-        hint: {
-          text: "$5"
-        },
-        items: [
-          ${6:Use gov-form-option snippet}
-        ]
-      }) }}$7
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Checkboxes – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/checkboxes/'
+    'prefix': 'gov-form-checkboxes'
+    'body': """
+    {{ govukCheckboxes({
+      idPrefix: "$1",
+      name: "$1",
+      fieldset: {
+        legend: {
+          text: "${2:Legend text}",
+          isPageHeading: ${3:true},
+          classes: "govuk-fieldset__legend--${4:xl}"
+        }
+      },
+      hint: {
+        text: "$5"
+      },
+      items: [
+        ${6:Use gov-form-option snippet}
+      ]
+    }) }}$7
+    """
   'Radios':
-      'leftLabel': 'GOV.UK'
-      'description': 'Radios – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/radios/'
-      'prefix': 'gov-form-radios'
-      'body': """
-      {{ govukRadios({
-        idPrefix: "$1",
-        name: "$1",
-        fieldset: {
-          legend: {
-            text: "${2:Legend text}",
-            isPageHeading: ${3:true},
-            classes: "govuk-fieldset__legend--${4:xl}"
-          }
-        },
-        hint: {
-          text: "$5"
-        },
-        items: [
-          ${6:Use gov-form-option snippet}
-        ]
-      }) }}$7
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Radios – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/radios/'
+    'prefix': 'gov-form-radios'
+    'body': """
+    {{ govukRadios({
+      idPrefix: "$1",
+      name: "$1",
+      fieldset: {
+        legend: {
+          text: "${2:Legend text}",
+          isPageHeading: ${3:true},
+          classes: "govuk-fieldset__legend--${4:xl}"
+        }
+      },
+      hint: {
+        text: "$5"
+      },
+      items: [
+        ${6:Use gov-form-option snippet}
+      ]
+    }) }}$7
+    """
   'Select':
-      'leftLabel': 'GOV.UK'
-      'description': 'Select – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/select/'
-      'prefix': 'gov-form-select'
-      'body': """
-      {{ govukSelect({
-        id: "$1",
-        name: "$1",
-        label: {
-          text: "${2:Label text}"
-        },
-        items: [
-          ${3:Use gov-form-option snippet}
-        ]
-      }) }}$4
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Select – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/select/'
+    'prefix': 'gov-form-select'
+    'body': """
+    {{ govukSelect({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      items: [
+        ${3:Use gov-form-option snippet}
+      ]
+    }) }}$4
+    """
   'Radio, checkbox or select option':
-      'leftLabel': 'GOV.UK'
-      'description': 'Radio, checkbox or select option – GOV.UK Design System'
-      'prefix': 'gov-form-option'
-      'body': """
-      {
-        value: "$1",
-        text: "$2"
-      }$3
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Radio, checkbox or select option – GOV.UK Design System'
+    'prefix': 'gov-form-option'
+    'body': """
+    {
+      value: "$1",
+      text: "$2"
+    }$3
+    """
   'Text input':
-      'leftLabel': 'GOV.UK'
-      'description': 'Text input – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/text-input/'
-      'prefix': 'gov-form-input'
-      'body': """
-      {{ govukInput({
-        id: "$1",
-        name: "$1",
-        label: {
-          text: "${2:Label text}"
-        },
-        hint: {
-          text: "${3:Hint text}"
-        }
-      }) }}$4
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Text input – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/text-input/'
+    'prefix': 'gov-form-input'
+    'body': """
+    {{ govukInput({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      }
+    }) }}$4
+    """
   'Textarea':
-      'leftLabel': 'GOV.UK'
-      'description': 'Textarea – GOV.UK Design System'
-      'descriptionMoreURL': 'https://design-system.service.gov.uk/components/textarea/'
-      'prefix': 'gov-form-textarea'
-      'body': """
-      {{ govukTextarea({
-        id: "$1",
-        name: "$1",
-        label: {
-          text: "${2:Label text}"
-        },
-        hint: {
-          text: "${3:Hint text}"
-        }
-      }) }}$4
-      """
+    'leftLabel': 'GOV.UK'
+    'description': 'Textarea – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/textarea/'
+    'prefix': 'gov-form-textarea'
+    'body': """
+    {{ govukTextarea({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      }
+    }) }}$4
+    """
 
   # ############################################################################
   # Components
