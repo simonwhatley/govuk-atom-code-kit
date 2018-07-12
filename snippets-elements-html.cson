@@ -28,494 +28,682 @@
 #
 
 '.text.html.basic, .text.html.nunjucks':
-  # layouts
+
+  # ############################################################################
+  # Layouts
+  # Grid rows and columns
+  # ############################################################################
+
   'Grid row':
     'leftLabel': 'GOV.UK'
     'description': 'Grid row – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-grid-row'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-grid-row'
     'body': """
     <div class="grid-row">
       $1
     </div>$2
     """
-  'Column':
+  'Grid column':
     'leftLabel': 'GOV.UK'
-    'description': 'Column layout – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-column'
+    'description': 'Grid column – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-grid-column'
     'body': """
     {# Column size class suffixes: full, one-half, one-third, two-thirds, one-quarter #}
     <div class="column-${1:size}">
       $2
     </div>$3
     """
-  'Column full':
+  'Grid column full':
     'leftLabel': 'GOV.UK'
-    'description': 'Column full-width layout – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-column-full'
+    'description': 'Grid column full width – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-grid-column-full'
     'body': """
     <div class="column-full">
       $1
     </div>$2
     """
-  'Column one-half':
+  'Grid column one-half':
     'leftLabel': 'GOV.UK'
-    'description': 'Column one-half layout – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-column-one-half'
+    'description': 'Grid column one-half width – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-grid-column-one-half'
     'body': """
     <div class="column-one-half">
       $1
     </div>$2
     """
-  'Column one-quarter':
+  'Grid column one-quarter':
     'leftLabel': 'GOV.UK'
-    'description': 'Column one-quarter layout – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-column-one-quarter'
+    'description': 'Grid column one-quarter width – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-grid-column-one-quarter'
     'body': """
     <div class="column-one-quarter">
       $1
     </div>$2
     """
-  'Column two-thirds':
+  'Grid column two-thirds':
     'leftLabel': 'GOV.UK'
-    'description': 'Column two-thirds layout – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-column-two-thirds'
+    'description': 'Grid column two-thirds width – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-grid-column-two-thirds'
     'body': """
     <div class="column-two-thirds">
       $1
     </div>$2
     """
-  'Column one-third':
+  'Grid column one-third':
     'leftLabel': 'GOV.UK'
-    'description': 'Column one-third layout – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-column-one-third'
+    'description': 'Grid column one-third width – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-grid-column-one-third'
     'body': """
     <div class="column-one-third">
       $1
     </div>$2
     """
+  'Layout two-thirds / one-third':
+    'leftLabel': 'GOV.UK'
+    'description': 'Layout two-thirds / one-third columns – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-two-thirds-one-third'
+    'body': """
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        $1
+      </div>
+      <div class="column-one-third">
+        $2
+      </div>
+    </div>$3
+    """
+  'Layout one-third / two-thirds':
+    'leftLabel': 'GOV.UK'
+    'description': 'Layout one-third / two-thirds columns – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/layout/'
+    'prefix': 'gov-layout-one-third-two-thirds'
+    'body': """
+    <div class="grid-row">
+      <div class="column-one-third">
+        $1
+      </div>
+      <div class="column-two-thirds">
+        $2
+      </div>
+    </div>$3
+    """
+
+  # ############################################################################
+  # Layouts
+  # Sections and groups
+  # ############################################################################
+
   'Form section':
     'leftLabel': 'GOV.UK'
     'description': 'Form section – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-form-section'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-section'
     'body': """
     <div class="form-section">
-      $1
-    </div>$2
-    """
-  'Form section compound':
-    'leftLabel': 'GOV.UK'
-    'description': 'Form section compound – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-form-section-compound'
-    'body': """
-    <div class="form-section-compound">
       $1
     </div>$2
     """
   'Form group':
     'leftLabel': 'GOV.UK'
     'description': 'Form group – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/layout/'
-    'prefix': 'gov-layout-form-group'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-group'
     'body': """
     <div class="form-group">
       $1
     </div>$2
     """
-  # typography
-  'Heading 1':
+  'Form fieldset':
     'leftLabel': 'GOV.UK'
-    'description': 'Headings – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-headings'
-    'prefix': 'gov-typography-h1'
+    'description': 'Form fieldset – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-fieldset'
     'body': """
-    {# Column size class suffixes: xlarge, large, medium, small #}
-    <h1 class="heading-${1:size}">
-      $2
-    </h1>$3
+    <fieldset>
+      <legend>
+        {# Heading size class suffixes: xlarge, large, medium, small #}
+        <span class="heading-${1:medium}">
+          ${2:Legend text}
+        </span>
+      </legend>
+      $3
+    </fieldset>$4
     """
-  'Heading 2':
+  'Section break':
     'leftLabel': 'GOV.UK'
-    'description': 'Headings – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-headings'
-    'prefix': 'gov-typography-h2'
+    'description': 'Section break – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-section-break'
     'body': """
-    {# Column size class suffixes: xlarge, large, medium, small #}
-    <h2 class="heading-${1:size}">
-      $2
-    </h2>$3
-    """
-  'Heading 3':
-    'leftLabel': 'GOV.UK'
-    'description': 'Headings – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-headings'
-    'prefix': 'gov-typography-h3'
-    'body': """
-    {# Column size class suffixes: xlarge, large, medium, small #}
-    <h3 class="heading-${1:size}">
-      $2
-    </h3>$3
-    """
-  'Heading 4':
-    'leftLabel': 'GOV.UK'
-    'description': 'Headings – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-headings'
-    'prefix': 'gov-typography-h4'
-    'body': """
-    {# Column size class suffixes: xlarge, large, medium, small #}
-    <h4 class="heading-${1:size}">
-      $2
-    </h4>$3
-    """
-  'Heading secondary':
-    'leftLabel': 'GOV.UK'
-    'description': 'Headings – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/'
-    'prefix': 'gov-typography-heading-secondary'
-    'body': """
-    <span class="heading-secondary">
-      $1
-    </span>$2
-    """
-  'Lede':
-    'leftLabel': 'GOV.UK'
-    'description': 'Lead paragraph – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-lead-paragraph'
-    'prefix': 'gov-typography-lede'
-    'body': """
-    <p class="lede">
-      $1
-    </p>$2
-    """
-  'Link back':
-    'leftLabel': 'GOV.UK'
-    'description': 'Link back – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-links'
-    'prefix': 'gov-typography-link-back'
-    'body': """
-    <a href="${1:destination}" class="link-back">$2</a>
-    """
-  'Bullet list':
-    'leftLabel': 'GOV.UK'
-    'description': 'Lists – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-lists'
-    'prefix': 'gov-typography-bullet-list'
-    'body': """
-    <ul class="list list-bullet">
-      <li>$1</li>$2
-    </ul>$3
-    """
-  'Numbered list':
-    'leftLabel': 'GOV.UK'
-    'description': 'Lists – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-lists'
-    'prefix': 'gov-typography-numbered-list'
-    'body': """
-    <ol class="list list-number">
-      <li>$1</li>$2
-    </ol>$3
-    """
-  'Related links':
-    'leftLabel': 'GOV.UK'
-    'description': 'Related links – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-lists'
-    'prefix': 'gov-typography-related-links'
-    'body': """
-    <ul class="list">
-      <li>$1</li>$2
-    </ul>$3
-    """
-  'Inset text':
-    'leftLabel': 'GOV.UK'
-    'description': 'Inset text – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-inset-text'
-    'prefix': 'gov-typography-inset-text'
-    'body': """
-    <div class="panel panel-border-wide">
-      <p>$1</p>$2
-    </div>$3
-    """
-  'Warning text':
-    'leftLabel': 'GOV.UK'
-    'description': 'Warning text – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-warning-text'
-    'prefix': 'gov-typography-warning-text'
-    'body': """
-    <div class="notice">
-      <i class="icon icon-important">
-        <span class="visually-hidden">Warning</span>
-      </i>
-      <strong class="bold-small">
-        $1
-      </strong>
-    </div>$2
-    """
-  'Hidden text (progressive disclosure)':
-    'leftLabel': 'GOV.UK'
-    'description': 'Hidden text (progressive disclosure) – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/typography/#typography-hidden-text'
-    'prefix': 'gov-typography-hidden-text'
-    'body': """
-    <details>
-      <summary><span class="summary">$1</span></summary>
-      <div class="panel panel-border-narrow">
-        <p>
-          $2
-        </p>
-      </div>
-    </details>$3
+    <hr class="section-break">$1
     """
 
-  # form elements
-  'Input':
+  # ############################################################################
+  # Typography
+  # ############################################################################
+
+  'Headings':
     'leftLabel': 'GOV.UK'
-    'description': 'Text, password or number input – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-input'
+    'description': 'Headings – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-heading'
+    'body': """
+    {# Heading size class suffixes: xlarge, large, medium, small #}
+    <h${1:1} class="heading-${2:xlarge}">
+      ${3:Heading text}
+    </h${1:1}>$4
+    """
+  'Captions':
+    'leftLabel': 'GOV.UK'
+    'description': 'Captions – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-caption'
+    'body': """
+    <span class="heading-secondary">
+      ${1:Caption text}
+    </span>$2
+    """
+  'Paragraph body':
+    'leftLabel': 'GOV.UK'
+    'description': 'Paragraph body – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-paragraph-body'
+    'body': """
+    <p>
+      ${1:Paragraph text}
+    </p>$2
+    """
+  'Paragraph body small':
+    'leftLabel': 'GOV.UK'
+    'description': 'Paragraph body small – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-paragraph-body-small'
+    'body': """
+    <p class="font-small">
+      ${1:Paragraph text}
+    </p>$2
+    """
+  'Lead paragraph':
+    'leftLabel': 'GOV.UK'
+    'description': 'Lead paragraph – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-paragraph-lead'
+    'body': """
+    <p class="lede">
+      ${1:Paragraph text}
+    </p>$2
+    """
+  'Font size override':
+    'leftLabel': 'GOV.UK'
+    'description': 'Font size override – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-font-size'
+    'body': """
+    <p class="${1:font-xsmall}">
+      ${1:Paragraph text}
+    </p>$3
+    """
+  'Font weight override':
+    'leftLabel': 'GOV.UK'
+    'description': 'Font weight override – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-font-weight'
+    'body': """
+    <p class="${1:bold}">
+      ${2:Paragraph text}
+    </p>$3
+    """
+  'Links':
+    'leftLabel': 'GOV.UK'
+    'description': 'Links – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-link'
+    'body': """
+    <a href="${1:#}">
+      ${2:Link text}
+    </a>$3
+    """
+  'Lists':
+    'leftLabel': 'GOV.UK'
+    'description': 'Lists – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-list'
+    'body': """
+    <ul class="list">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+  'Bulleted lists':
+    'leftLabel': 'GOV.UK'
+    'description': 'Bulleted lists – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-list-bulleted'
+    'body': """
+    <ul class="list list-bullet">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+  'Numbered lists':
+    'leftLabel': 'GOV.UK'
+    'description': 'Numbered lists – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/'
+    'prefix': 'gov-list-numbered'
+    'body': """
+    <ul class="list list-number">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+
+  # ############################################################################
+  # Components
+  # Forms
+  # ############################################################################
+
+  'Button':
+    'leftLabel': 'GOV.UK'
+    'description': 'Button – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-button'
+    'body': """
+    <button type="submit" class="button button-primary">
+      ${1:Button label text}
+    </button>$2
+    """
+  'Checkboxes':
+    'leftLabel': 'GOV.UK'
+    'description': 'Checkboxes – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-checkboxes'
     'body': """
     <div class="form-group">
-      <label class="form-label-bold" for="$1">$2</label>
-      {# Input types: text, number, password, Default: text #}
-      <input class="form-control" id="$3" type="${4:text}" name="$5">
+      <fieldset aria-describedby="$1-hint">
+        <legend>
+          <span class="form-label-bold">
+            ${2:Legend text}
+          </span>
+          <span id="$1-hint" class="body-text">
+            ${3:Hint text}
+          </span>
+        </legend>
+
+        ${4:Use gov-form-checkbox-option snippet}
+
+      </fieldset>
     </div>$5
     """
-  'Input with hint':
+  'Checkbox option':
     'leftLabel': 'GOV.UK'
-    'description': 'Text, password or number input with hint – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-input-hint'
+    'description': 'Checkbox option – GOV.UK Elements'
+    'prefix': 'gov-form-checkbox-option'
+    'body': """
+    <div class="multiple-choice">
+      <input id="${1:name}-1" name="${1:name}" type="checkbox" value="${2:value}">
+      <label for="${1:name}-1">
+        ${3:Label text}
+      </label>
+    </div>$4
+    """
+  'Radios':
+    'leftLabel': 'GOV.UK'
+    'description': 'Radios – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-radios'
     'body': """
     <div class="form-group">
-      <label class="form-label-bold" for="$1">
-        $2
-        <span class="form-hint">$3</span>
+      <!-- Optional class: inline -->
+      <fieldset aria-describedby="$1-hint">
+        <legend>
+          <span class="form-label-bold">
+            ${2:Legend text}
+          </span>
+          <span id="$1-hint" class="body-text">
+            ${3:Hint text}
+          </span>
+        </legend>
+
+        ${4:Use gov-form-radio-option snippet}
+
+      </fieldset>
+    </div>$5
+    """
+  'Radio option':
+    'leftLabel': 'GOV.UK'
+    'description': 'Radio option – GOV.UK Elements'
+    'prefix': 'gov-form-radio-option'
+    'body': """
+    <div class="multiple-choice">
+      <input id="${1:name}-1" name="${1:name}" type="radio" value="${2:value}">
+      <label for="${1:name}-1">
+        ${3:Label text}
       </label>
-      {# Input types: text, number, password. Default: text #}
-      <input class="form-control" id="$3" type="${5:text}" name="$6">
-    </div>$6
+    </div>$4
+    """
+  'Select':
+    'leftLabel': 'GOV.UK'
+    'description': 'Select – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-select'
+    'body': """
+    <div class="form-group">
+      <label class="form-label-bold" for="${1:name}">
+        ${2:Label text}
+      </label>
+      <select class="form-control" id="${1:name}" name="${1:name}">
+        ${3:Use gov-form-select-option snippet}
+      </select>
+    </div>$4
+    """
+  'Select option':
+    'leftLabel': 'GOV.UK'
+    'description': 'Select option – GOV.UK Elements'
+    'prefix': 'gov-form-select-option'
+    'body': """
+    <option value="${1:value}">${2:label text}</option>$3
+    """
+  'Text input':
+    'leftLabel': 'GOV.UK'
+    'description': 'Text input – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-input'
+    'body': """
+    <div class="govuk-form-group">
+      <label class="form-label-bold" for="${1:name}">
+        ${2:Label text}
+      </label>
+      <span id="${1:name}-hint" class="form-hint">
+        ${3:Hint text}
+      </span>
+      <input class="form-control" id="${1:name}" name="${1:name}" type="text" aria-describedby="${1:name}-hint">
+    </div>$4
     """
   'Textarea':
     'leftLabel': 'GOV.UK'
     'description': 'Textarea – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/#form-textarea'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-form-textarea'
     'body': """
     <div class="form-group">
-      <label class="form-label-bold" for="$1">
-        $2
+      <label class="form-label-bold" for="${1:name}">
+        ${2:Label text}
       </label>
-      <textarea class="form-control" id="$3" rows="5" name="$4">$5</textarea>
-    </div>$6
+      <span id="${1:name}-hint" class="form-hint">
+        ${3:Hint text}
+      </span>
+      <textarea class="form-control" id="${1:name}" name="${1:name}" rows="5" aria-describedby="${1:name}-hint"></textarea>
+    </div>
     """
-  'Textarea with hint':
+
+  # ############################################################################
+  # Components
+  # Form patterns
+  # ############################################################################
+
+  'Address':
     'leftLabel': 'GOV.UK'
-    'description': 'Textarea with hint – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/#form-textarea'
-    'prefix': 'gov-form-textarea-hint'
+    'description': 'Addresses – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-address'
     'body': """
-    <div class="form-group">
-      <label class="form-label-bold" for="$1">
-        $2
-        <span class="form-hint">$3</span>
-      </label>
-      <textarea class="form-control" id="$4" rows="5" name="$5">$6</textarea>
-    </div>$7
-    """
-  'Radio input stacked':
-    'leftLabel': 'GOV.UK'
-    'description': 'Radios stacked – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/#form-radio-buttons'
-    'prefix': 'gov-form-radio-stacked'
-    'body': """
-    <div class="form-group">
-      <fieldset>
-        <legend>
-          <span class="form-label-bold">
-            ${1:Label text}
-          </span>
-        </legend>
-        <div class="multiple-choice">
-          <input id="$2" type="radio" name="$3" value="$4">
-          <label for="$5">$6</label>
-        </div>$7
-      </fieldset>$8
-    </div>$9
-    """
-  'Radio input inline':
-    'leftLabel': 'GOV.UK'
-    'description': 'Radio input inline – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/#form-radio-buttons'
-    'prefix': 'gov-form-radio-inline'
-    'body': """
-    <div class="form-group">
-      <fieldset class="inline">
-        <legend>
-          <span class="form-label-bold">
-            ${1:Label text}
-          </span>
-        </legend>
-        <div class="multiple-choice">
-          <input id="$2" type="radio" name="$3" value="$4">
-          <label for="$5">$6</label>
-        </div>$7
-      </fieldset>$8
-    </div>$9
-    """
-  'Checkbox input stacked':
-    'leftLabel': 'GOV.UK'
-    'description': 'Checkbox input stacked – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/#form-checkboxes'
-    'prefix': 'gov-form-checkbox-stacked'
-    'body': """
-    <div class="form-group">
-      <fieldset>
-        <legend>
-          <span class="form-label-bold">
-            ${1:Label text}
-          </span>
-        </legend>
-        <div class="multiple-choice">
-          <input id="$2" type="checkbox" name="$3" value="$4">
-          <label for="$5">$6</label>
-        </div>$7
-      </fieldset>$8
-    </div>$9
-    """
-  'Radio option':
-    'leftLabel': 'GOV.UK'
-    'description': 'Single radio option – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-radio-option'
-    'body': """
-    <div class="multiple-choice">
-      <input id="$1" type="radio" name="$2" value="$3">
-      <label for="$4">$5</label>
-    </div>$6
-    """
-  'Checkbox option':
-    'leftLabel': 'GOV.UK'
-    'description': 'Single checkbox option – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-checkbox-option'
-    'body': """
-    <div class="multiple-choice">
-      <input id="$1" type="checkbox" name="$2" value="$3">
-      <label for="$4">$5</label>
-    </div>$6
-    """
-  'Select input':
-    'leftLabel': 'GOV.UK'
-    'description': 'Select input – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-select'
-    'body': """
-    <div class="form-group">
-      <label class="form-label-bold" for="select-box">
-        ${1:Label text}
-        <span class="form-hint">
-          ${2:Hint text}
+    <fieldset>
+      <legend>
+        <span class="form-label-bold">
+          What is your address?
         </span>
-      </label>
-      <select class="form-control" id="select-box">
-        <option value="$3">$4</option>$5
-      </select>
-    </div>$6
-    """
-  'Select option':
-    'leftLabel': 'GOV.UK'
-    'description': 'Single select option – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-select-option'
-    'body': """
-    <option value="$1">$2</option>$3
-    """
-  'Form field hint':
-    'leftLabel': 'GOV.UK'
-    'description': 'Form field hint – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-hint'
-    'body': """
-    <span class="form-hint">
-      $1
-    </span>
+      </legend>
+      <div class="form-group">
+        <label class="form-label" for="address-line-1">
+          Building and street <span class="visually-hidden">line 1 of 2</span>
+        </label>
+        <input class="form-control" id="address-line-1" name="address-line-1" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="address-line-2">
+          <span class="visually-hidden">Building and street line 2 of 2</span>
+        </label>
+        <input class="form-control" id="address-line-2" name="address-line-2" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="address-town">
+          Town or city
+        </label>
+        <input class="form-control form-control-2-3" id="address-town" name="address-town" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="address-county">
+          County
+        </label>
+        <input class="form-control form-control-2-3" id="address-county" name="address-county" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="address-postcode">
+          Postcode
+        </label>
+        <input class="form-control form-control-1-4" id="address-postcode" name="address-postcode" type="text">
+      </div>
+    </fieldset>$1
     """
   'Date input':
     'leftLabel': 'GOV.UK'
     'description': 'Date input – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-date-input'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/form-elements/example-date/'
+    'prefix': 'gov-form-date'
     'body': """
     <div class="form-group">
-      <fieldset>
+      <fieldset aria-describedby="${1:name}-hint" role="group">
         <legend>
           <span class="form-label-bold">
-            ${1:Date}
+            ${2:Date}
           </span>
-          <span class="form-hint">
-            ${2:For example, 31 3 2018}
+          <span id="${1:name}-hint" class="form-hint">
+            ${3:For example, 31 3 1980}
           </span>
         </legend>
-        <div class="form-date">
+        <div class="form-date" id="${1:name}">
           <div class="form-group form-group-day">
-            <label class="form-label" for="${3:day}">
+            <label class="form-label" for="${1:name}-day">
               Day
             </label>
-            <input class="form-control" id="${4:day}" max="31" min="1" name="$5" pattern="[0-9]*" type="number" value="$6">
+            <input class="form-control" id="${1:name}-day" name="${1:name}-day" type="number" pattern="[0-9]*" min="1" max="31">
           </div>
-          <div class="form-group form-group-month">
-            <label class="form-label" for="${7:month}">
+          <div class="form-group-month">
+            <label class="form-label" for="${1:name}-month">
               Month
             </label>
-            <input class="form-control" id="${8:month}" max="12" min="1" name="$9" pattern="[0-9]*" type="number" value="$10">
+            <input class="form-control" id="${1:name}-month" name="${1:name}-month" type="number" pattern="[0-9]*" min="1" max="12">
           </div>
-          <div class="form-group form-group-year">
-            <label class="form-label" for="${11:year}">
+          <div class="form-group-year">
+            <label class="form-label" for="${1:name}-year">
               Year
             </label>
-            <input class="form-control" id="${12:year}" max="2019" min="1900" name="$13" pattern="[0-9]*" type="number" value="$14">
+            <input class="form-control" id="${1:name}-year" name="${1:name}-year" type="number" pattern="[0-9]*" min="1900">
           </div>
         </div>
       </fieldset>
-    </div>$15
+    </div>$4
     """
   'File upload':
     'leftLabel': 'GOV.UK'
     'description': 'File upload – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-file-upload'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-file'
     'body': """
     <div class="form-group">
-      <label class="form-label" for="file-input">
-        ${1:Upload a file}
+      <label class="form-label" for="${1:file-upload}-1">
+        ${2:Upload a file}
       </label>
-      <input type="file" id="file-input">
-    </div>$2
-    """
-  'Form buttons':
-    'leftLabel': 'GOV.UK'
-    'description': 'Form buttons – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-button-group'
-    'body': """
-    <div class="form-group form-buttons">
-      {# Style class suffixes: button-primary, button-secondary, button-tertiary #}
-      <input type="submit" class="button ${1:style}" value="${2:text}">$2
+      <input class="form-control file-upload" id="${1:file-upload}-1" name="${1:file-upload}-1" type="file">
     </div>$3
     """
-  'Button':
+  'National Insurance number (NINO)':
     'leftLabel': 'GOV.UK'
-    'description': 'Form button – GOV.UK Elements'
-    'descriptionMoreURL': 'http://govuk-elements.herokuapp.com/form-elements/'
-    'prefix': 'gov-form-button'
+    'description': 'National Insurance number (NINO) – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-form-nino'
     'body': """
-    {# Style class suffixes: button-primary, button-secondary, button-tertiary #}
-    <input type="submit" class="button ${1:style}" value="${2:text}">$2
+    <div class="form-group">
+      <label class="form-label-bold" for="national-insurance-number">
+        National insurance number
+      </label>
+      <span id="national-insurance-number-hint" class="form-hint">
+        It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.
+      </span>
+      <input class="form-control" id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
+    </div>$1
+    """
+
+  # ############################################################################
+  # Components
+  # Other
+  # ############################################################################
+
+  'Back link':
+    'leftLabel': 'GOV.UK'
+    'description': 'Back link – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-back-link'
+    'body': """
+
+    """
+  'Breadcrumbs':
+    'leftLabel': 'GOV.UK'
+    'description': 'Breadcrumbs – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-breadcrumbs'
+    'body': """
+
+    """
+  'Details':
+    'leftLabel': 'GOV.UK'
+    'description': 'Details – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-details'
+    'body': """
+
+    """
+  'Error summary':
+    'leftLabel': 'GOV.UK'
+    'description': 'Error summary – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-error-summary'
+    'body': """
+
+    """
+  'Footer':
+    'leftLabel': 'GOV.UK'
+    'description': 'Footer – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-footer'
+    'body': """
+
+    """
+  'Header':
+    'leftLabel': 'GOV.UK'
+    'description': 'Header – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-header'
+    'body': """
+
+    """
+  'Inset text':
+    'leftLabel': 'GOV.UK'
+    'description': 'Inset text – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-inset-text'
+    'body': """
+
+    """
+  'Link item':
+    'leftLabel': 'GOV.UK'
+    'description': 'Link item – GOV.UK Elements'
+    'prefix': 'gov-link-item'
+    'body': """
+
+    """
+  'Panel':
+    'leftLabel': 'GOV.UK'
+    'description': 'Panel – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-panel'
+    'body': """
+
+    """
+  'Phase banner':
+    'leftLabel': 'GOV.UK'
+    'description': 'Phase banner – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-phase-banner'
+    'body': """
+
+    """
+  'Skip link':
+    'leftLabel': 'GOV.UK'
+    'description': 'Skip link – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-skip-link'
+    'body': """
+
+    """
+  'Table':
+    'leftLabel': 'GOV.UK'
+    'description': 'Table – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-table'
+    'body': """
+
+    """
+  'Tab':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tabs – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-tab'
+    'body': """
+
+    """
+  'Tag':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tags – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-tag'
+    'body': """
+
+    """
+  'Warning text':
+    'leftLabel': 'GOV.UK'
+    'description': 'Warning text – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'prefix': 'gov-warning-text'
+    'body': """
+
     """
