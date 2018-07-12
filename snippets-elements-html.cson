@@ -594,7 +594,7 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-back-link'
     'body': """
-
+    <a href="${1:#}" class="back-link">Back</a>$2
     """
   'Breadcrumbs':
     'leftLabel': 'GOV.UK'
@@ -602,23 +602,54 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-breadcrumbs'
     'body': """
-
+    <ol id="breadcrumb-links">
+      <li><a href="#">Link text</a></li>
+      <li><a href="#">Link text</a></li>
+      <li><a href="#">Link text</a></li>
+      <li><a href="#">Link text</a></li>
+    </ol>
     """
   'Details':
     'leftLabel': 'GOV.UK'
-    'description': 'Details – GOV.UK Elements'
+    'description': 'Details (hidden text / progressive disclosure) – GOV.UK Elements'
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-details'
     'body': """
-
+    <details>
+      <summary>
+        <span class="summary">
+          ${1:Summary text}
+        </span>
+      </summary>
+      <div class="panel panel-border-narrow">
+        <p>
+          ${2:Text}
+        </p>
+      </div>
+    </details>$3
     """
   'Error summary':
     'leftLabel': 'GOV.UK'
     'description': 'Error summary – GOV.UK Elements'
-    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/errors/'
     'prefix': 'gov-error-summary'
     'body': """
-
+    <div class="error-summary" role="alert" aria-labelledby="error-summary-heading" tabindex="-1">
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading">
+        ${1:There is a problem}
+      </h2>
+      <p>
+        ${2:Optional description of the errors and how to correct them}
+      </p>
+      <ul class="error-summary-list">
+        <li>
+          <a href="#item-1-error">${3:Error item}</a>
+        </li>
+        <li>
+          <a href="#item-2-error">${4:Error item}</a>
+        </li>$5
+      </ul>
+    </div>$6
     """
   'Footer':
     'leftLabel': 'GOV.UK'
@@ -626,7 +657,21 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-footer'
     'body': """
-
+    <footer class="group js-footer" id="footer" role="contentinfo">
+      <div class="footer-wrapper">
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+              <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
     """
   'Header':
     'leftLabel': 'GOV.UK'
@@ -634,22 +679,43 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-header'
     'body': """
-
+    <div class="header-wrapper">
+      <div class="header-global">
+        <div class="header-logo">
+          <a href="${1:#}" title="${2:Title text}" id="logo" class="content">
+            <img src="/public/images/gov.uk_logotype_crown_invert_trans.png?0.23.0" width="36" height="32" alt="">
+            ${3:GOV.UK}
+          </a>
+        </div>
+      </div>
+      <div class="header-proposition">
+        <div class="content">
+          <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+          <nav id="proposition-menu">
+            <a href="/" id="proposition-name">${4:Service name}</a>
+            <ul id="proposition-links">
+              <li><a href="#">Link text</a></li>
+              <li><a href="#">Link text</a></li>
+              <li><a href="#">Link text</a></li>
+              <li><a href="#">Link text</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="global-header-bar"></div>$5
     """
   'Inset text':
     'leftLabel': 'GOV.UK'
     'description': 'Inset text – GOV.UK Elements'
-    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/#typography-inset-text'
     'prefix': 'gov-inset-text'
     'body': """
-
-    """
-  'Link item':
-    'leftLabel': 'GOV.UK'
-    'description': 'Link item – GOV.UK Elements'
-    'prefix': 'gov-link-item'
-    'body': """
-
+    <div class="panel panel-border-wide">
+      <p>
+        ${1:Inset text}
+      </p>
+    </div>$2
     """
   'Panel':
     'leftLabel': 'GOV.UK'
@@ -657,15 +723,27 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-panel'
     'body': """
-
+    <div class="confirmation">
+			<h2 class="heading-large">
+				${1:Title text}
+			</h2>
+			<p>
+        Your reference number<br><strong>${2:Reference}</strong>
+      </p>
+		</div>$3
     """
   'Phase banner':
     'leftLabel': 'GOV.UK'
     'description': 'Phase banner – GOV.UK Elements'
-    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/alpha-beta-banners/#alpha-banner'
     'prefix': 'gov-phase-banner'
     'body': """
-
+    <div class="phase-banner">
+      <p>
+        <strong class="phase-tag">${1:ALPHA|BETA}</strong>
+        <span>${2:This is a new service – your <a href="#">feedback</a> will help us to improve it.}</span>
+      </p>
+    </div>$3
     """
   'Skip link':
     'leftLabel': 'GOV.UK'
@@ -673,15 +751,44 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-skip-link'
     'body': """
-
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
     """
   'Table':
     'leftLabel': 'GOV.UK'
     'description': 'Table – GOV.UK Elements'
-    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/data/'
     'prefix': 'gov-table'
     'body': """
-
+    <table>
+      <caption class="heading-small">${1:Caption text}</caption>
+      <thead>
+        <tr>
+          <!-- Add class="numeric" if a numeric column -->
+          <th scope="col">${2:Column 1 heading}</th>
+          <th scope="col">${3:Column 2 heading}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- First column as header. Change to normal cell if required -->
+          <th scope="row">${4:Column 1, row 1}</th>
+          <!-- Add class="numeric" if a numeric cell -->
+          <td>${5:Column 2, row 1}</td>
+        </tr>
+        <tr>
+          <th scope="row">${6:Column 1, row 2}</th>
+          <td>${7:Column 2, row 2}</td>
+        </tr>
+        <tr>
+          <th scope="row">${8:Column 1, row 3}</th>
+          <td>${9:Column 2, row 3}</td>
+        </tr>$10
+      </tbody>
+    </table>$11
     """
   'Tab':
     'leftLabel': 'GOV.UK'
@@ -689,21 +796,58 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-tab'
     'body': """
-
+    <div class="tabs" data-module="tabs">
+			<div class="tabs-nav">
+				<ul class="tabs-list">
+					${1:Use gov-tab-item snippet}
+				</ul>
+			</div>
+			${2:Use gov-tab-section snippet}
+		</div>
+    """
+  'Tab item':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tab item – GOV.UK Elements'
+    'prefix': 'gov-tab-item'
+    'body': """
+    <li>
+      <a href="#${1:section-name}">
+          ${2:Tab label}
+        </a>
+    </li>$3
+    """
+  'Tab section':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tabs – GOV.UK Elements'
+    'prefix': 'gov-tab-section'
+    'body': """
+    <div class="tabs-panel" id="${1:section-name}">
+      <div class="tabs-panel-inner text">
+        <h2 class="govuk-heading-l">${2:Section heading}</h2>
+        ${3:Section contents}
+      </div>
+    </div>$4
     """
   'Tag':
     'leftLabel': 'GOV.UK'
-    'description': 'Tags – GOV.UK Elements'
-    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'description': 'Phase tags – GOV.UK Elements'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/alpha-beta-banners/#phase-tags'
     'prefix': 'gov-tag'
     'body': """
-
+    <strong class="phase-tag">${1:ALPHA|BETA}</strong>$2
     """
   'Warning text':
     'leftLabel': 'GOV.UK'
     'description': 'Warning text – GOV.UK Elements'
-    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/typography/#typography-warning-text'
     'prefix': 'gov-warning-text'
     'body': """
-
+    <div class="notice">
+      <i class="icon icon-important">
+        <span class="visually-hidden">${1:Fallback text}</span>
+      </i>
+      <strong class="bold-small">
+        ${2:Warning text}
+      </strong>
+    </div>$3
     """
