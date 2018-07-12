@@ -191,7 +191,7 @@
 
   'Headings':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Headings – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#headings'
     'prefix': 'gov-heading'
     'body': """
@@ -201,7 +201,7 @@
     """
   'Captions':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Captions – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#headings-with-captions'
     'prefix': 'gov-caption'
     'body': """
@@ -211,7 +211,7 @@
     """
   'Paragraph body':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Paragraph body – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#body'
     'prefix': 'gov-paragraph-body'
     'body': """
@@ -221,7 +221,7 @@
     """
   'Paragraph body small':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Paragraph body small – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#body-small'
     'prefix': 'gov-paragraph-body-small'
     'body': """
@@ -231,7 +231,7 @@
     """
   'Lead paragraph':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Lead paragraph – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#lead-paragraph'
     'prefix': 'gov-paragraph-lead'
     'body': """
@@ -241,7 +241,7 @@
       """
   'Font size override':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Font size override – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#font-size'
     'prefix': 'gov-font-size'
     'body': """
@@ -252,7 +252,7 @@
     """
   'Font weight override':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Font weight override – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#font-weight'
     'prefix': 'gov-font-weight'
     'body': """
@@ -263,7 +263,7 @@
     """
   'Links':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Links – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#links'
     'prefix': 'gov-link'
     'body': """
@@ -273,7 +273,7 @@
     """
   'Lists':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Lists – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#lists'
     'prefix': 'gov-list'
     'body': """
@@ -291,7 +291,7 @@
     """
   'Bulleted lists':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Bulleted lists – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#bulleted-lists'
     'prefix': 'gov-list-bulleted'
     'body': """
@@ -303,7 +303,7 @@
     """
   'Numbered lists':
     'leftLabel': 'GOV.UK'
-    'description': ' – GOV.UK Design System'
+    'description': 'Numbered lists – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#numbered-lists'
     'prefix': 'gov-list-numbered'
     'body': """
