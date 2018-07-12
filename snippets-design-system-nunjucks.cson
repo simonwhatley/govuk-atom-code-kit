@@ -738,11 +738,11 @@
       ]
     }) }}$3
     """
-  'Tab':
+  'Tabs':
     'leftLabel': 'GOV.UK'
     'description': 'Tabs – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tabs/'
-    'prefix': 'gov-tab'
+    'prefix': 'gov-tabs'
     'body': """
     {% set ${1:Tab name} %}
     <h2 class="govuk-heading-l">${2:Tab heading}</h2>

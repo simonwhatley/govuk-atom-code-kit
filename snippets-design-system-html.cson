@@ -806,7 +806,7 @@
     'leftLabel': 'GOV.UK'
     'description': 'Tabs – GOV.UK Design System'
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tabs/'
-    'prefix': 'gov-tab'
+    'prefix': 'gov-tabs'
     'body': """
     <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
       <h2 class="govuk-tabs__title">

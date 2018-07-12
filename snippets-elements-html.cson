@@ -790,11 +790,11 @@
       </tbody>
     </table>$11
     """
-  'Tab':
+  'Tabs':
     'leftLabel': 'GOV.UK'
     'description': 'Tabs – GOV.UK Elements'
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
-    'prefix': 'gov-tab'
+    'prefix': 'gov-tabs'
     'body': """
     <div class="tabs" data-module="tabs">
 			<div class="tabs-nav">

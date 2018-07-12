@@ -750,11 +750,11 @@
       ]
     }) }}$3
     """
-  'Tab':
+  'Tabs':
     'leftLabel': 'GOV.UK'
     'description': 'Tabs – GOV.UK Elements'
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
-    'prefix': 'gov-tab'
+    'prefix': 'gov-tabs'
     'body': """
     {% set ${1:Tab name} %}
     <h2 class="govuk-heading-l">${2:Tab heading}</h2>
