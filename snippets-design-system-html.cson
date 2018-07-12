@@ -183,7 +183,7 @@
     'prefix': 'gov-section-break'
     'body': """
     <!-- Size modifiers: xl, l, m -->
-    <hr class="govuk-section-break govuk-section-break--${1:size} govuk-section-break--visible">
+    <hr class="govuk-section-break govuk-section-break--${1:size} govuk-section-break--visible">$2
     """
 
   # ############################################################################
@@ -207,7 +207,7 @@
     'prefix': 'gov-caption'
     'body': """
     <span class="govuk-caption-${1:xl|l|m}">
-      $2
+      ${2:Caption text}
     </span>$3
     """
   'Paragraph body':
@@ -217,7 +217,7 @@
     'prefix': 'gov-paragraph-body'
     'body': """
     <p class="govuk-body">
-      $1
+      ${1:Paragraph text}
     <p>$2
     """
   'Paragraph body small':
@@ -227,7 +227,7 @@
     'prefix': 'gov-paragraph-body-small'
     'body': """
     <p class="govuk-body-s">
-      $1
+      ${1:Paragraph text}
     <p>$2
     """
   'Lead paragraph':
@@ -237,7 +237,7 @@
     'prefix': 'gov-paragraph-lead'
     'body': """
     <p class="govuk-body-l">
-      $1
+      ${1:Paragraph text}
     <p>$2
     """
   'Font size override':
@@ -248,7 +248,7 @@
     'body': """
     <!-- Font sizes: 80, 48, 36, 27, 24, 19, 16, 14 -->
     <p class="govuk-body govuk-!-font-size-${1:size}">
-      $2
+      ${1:Paragraph text}
     <p>$3
     """
   'Font weight override':
@@ -259,7 +259,7 @@
     'body': """
     <!-- Font weights: regular, bold -->
     <p class="govuk-body govuk-!-font-weight-${1:bold}">
-      $2
+      ${1:Paragraph text}
     <p>$3
     """
   'Links':
@@ -269,7 +269,7 @@
     'prefix': 'gov-link'
     'body': """
     <a href="${1:#}" class="govuk-link">
-      $2
+      ${2:Link text}
     </a>$3
     """
   'Lists':
@@ -450,7 +450,7 @@
         ${3:Hint text}
       </span>
       <textarea class="govuk-textarea" id="${1:name}" name="${1:name}" rows="5" aria-describedby="${1:name}-hint"></textarea>
-    </div>
+    </div>$4
     """
 
   # ############################################################################
@@ -500,7 +500,7 @@
         </label>
         <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
       </div>
-    </fieldset>
+    </fieldset>$1
     """
   'Date input':
     'leftLabel': 'GOV.UK'
@@ -739,7 +739,7 @@
         ${1:Title text}
       </h2>
       <div class="govuk-panel__body">
-        Your reference number<br><strong>$2</strong>
+        Your reference number<br><strong>${2:Reference}</strong>
       </div>
     </div>$3
     """
@@ -838,8 +838,8 @@
     'body': """
     <section class="govuk-tabs__panel" id="${1:section-name}">
       <h2 class="govuk-heading-l">${2:Section heading}</h2>
-
-    </section>$3
+      ${3:Section contents}
+    </section>$4
     """
   'Tag':
     'leftLabel': 'GOV.UK'
