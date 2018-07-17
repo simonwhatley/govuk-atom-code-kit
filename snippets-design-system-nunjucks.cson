@@ -296,9 +296,15 @@
     'prefix': 'gov-list-bulleted'
     'body': """
     <ul class="govuk-list govuk-list--bullet">
-      <li>${1:List item}</li>
-      <li>${2:List item}</li>
-      <li>${3:List item}</li>
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
     </ul>$4
     """
   'Numbered lists':
@@ -308,9 +314,15 @@
     'prefix': 'gov-list-numbered'
     'body': """
     <ul class="govuk-list govuk-list--number">
-      <li>${1:List item}</li>
-      <li>${2:List item}</li>
-      <li>${3:List item}</li>
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
     </ul>$4
     """
 
