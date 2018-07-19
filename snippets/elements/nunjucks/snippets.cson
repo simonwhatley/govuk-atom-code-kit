@@ -757,7 +757,7 @@
     'prefix': 'gov-tabs'
     'body': """
     {% set ${1:Tab name} %}
-    <h2 class="govuk-heading-l">${2:Tab heading}</h2>
+    <h2 class="heading-large">${2:Tab heading}</h2>
     $3
     {% endset %}$4
     """
