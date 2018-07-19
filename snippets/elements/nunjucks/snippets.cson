@@ -518,7 +518,7 @@
   'Date input':
     'leftLabel': 'GOV.UK'
     'description': 'Date input – GOV.UK Elements'
-    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/components/date-input/'
+    'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/form-elements/example-date/'
     'prefix': 'gov-form-date'
     'body': """
     {{ govukDateInput({
