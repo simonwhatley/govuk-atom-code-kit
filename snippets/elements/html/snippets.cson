@@ -438,7 +438,7 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-form-input'
     'body': """
-    <div class="govuk-form-group">
+    <div class="form-group">
       <label class="form-label-bold" for="${1:name}">
         ${2:Label text}
       </label>
@@ -462,7 +462,7 @@
         ${3:Hint text}
       </span>
       <textarea class="form-control" id="${1:name}" name="${1:name}" rows="5" aria-describedby="${1:name}-hint"></textarea>
-    </div>
+    </div>$4
     """
 
   # ############################################################################
@@ -603,11 +603,11 @@
     'prefix': 'gov-breadcrumbs'
     'body': """
     <ol id="breadcrumb-links">
-      <li><a href="#">Link text</a></li>
-      <li><a href="#">Link text</a></li>
-      <li><a href="#">Link text</a></li>
-      <li><a href="#">Link text</a></li>
-    </ol>
+      <li><a href="#">${1:Link text}</a></li>
+      <li><a href="#">${2:Link text}</a></li>
+      <li><a href="#">${3:Link text}</a></li>
+      <li><a href="#">${4:Link text}</a></li>
+    </ol>$5
     """
   'Details':
     'leftLabel': 'GOV.UK'
@@ -643,10 +643,14 @@
       </p>
       <ul class="error-summary-list">
         <li>
-          <a href="#item-1-error">${3:Error item}</a>
+          <a href="#item-1-error">
+            ${3:Error item}
+          </a>
         </li>
         <li>
-          <a href="#item-2-error">${4:Error item}</a>
+          <a href="#item-2-error">
+            ${4:Error item}
+          </a>
         </li>$5
       </ul>
     </div>$6
@@ -764,7 +768,9 @@
     'prefix': 'gov-table'
     'body': """
     <table>
-      <caption class="heading-small">${1:Caption text}</caption>
+      <caption class="heading-small">
+        ${1:Caption text}
+      </caption>
       <thead>
         <tr>
           <!-- Add class="numeric" if a numeric column -->
@@ -803,7 +809,7 @@
 				</ul>
 			</div>
 			${2:Use gov-tab-section snippet}
-		</div>
+		</div>$3
     """
   'Tab item':
     'leftLabel': 'GOV.UK'
@@ -823,7 +829,9 @@
     'body': """
     <div class="tabs-panel" id="${1:section-name}">
       <div class="tabs-panel-inner text">
-        <h2 class="govuk-heading-l">${2:Section heading}</h2>
+        <h2 class="heading-large">
+          ${2:Section heading}
+        </h2>
         ${3:Section contents}
       </div>
     </div>$4
