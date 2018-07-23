@@ -338,7 +338,7 @@
     'prefix': 'gov-form-button'
     'body': """
     {{ govukButton({
-      text: "${1:Button text}"
+      "text": "${1:Button text}"
     }) }}$2
     """
   'Checkboxes':
@@ -348,19 +348,19 @@
     'prefix': 'gov-form-checkboxes'
     'body': """
     {{ govukCheckboxes({
-      idPrefix: "$1",
-      name: "$1",
-      fieldset: {
-        legend: {
-          text: "${2:Legend text}",
-          isPageHeading: ${3:true},
-          classes: "govuk-fieldset__legend--${4:xl}"
+      "idPrefix": "$1",
+      "name": "$1",
+      "fieldset": {
+        "legend": {
+          "text": "${2:Legend text}",
+          "isPageHeading": ${3:true},
+          "classes": "${4:heading-xlarge}"
         }
       },
-      hint: {
-        text: "$5"
+      "hint": {
+        "text": "$5"
       },
-      items: [
+      "items": [
         ${6:Use gov-form-option snippet}
       ]
     }) }}$7
@@ -372,19 +372,19 @@
     'prefix': 'gov-form-radios'
     'body': """
     {{ govukRadios({
-      idPrefix: "$1",
-      name: "$1",
-      fieldset: {
-        legend: {
-          text: "${2:Legend text}",
-          isPageHeading: ${3:true},
-          classes: "govuk-fieldset__legend--${4:xl}"
+      "idPrefix": "$1",
+      "name": "$1",
+      "fieldset": {
+        "legend": {
+          "text": "${2:Legend text}",
+          "isPageHeading": ${3:true},
+          "classes": "${4:heading-xlarge}"
         }
       },
-      hint: {
-        text: "$5"
+      "hint": {
+        "text": "$5"
       },
-      items: [
+      "items": [
         ${6:Use gov-form-option snippet}
       ]
     }) }}$7
@@ -396,12 +396,12 @@
     'prefix': 'gov-form-select'
     'body': """
     {{ govukSelect({
-      id: "$1",
-      name: "$1",
-      label: {
-        text: "${2:Label text}"
+      "id": "$1",
+      "name": "$1",
+      "label": {
+        "text": "${2:Label text}"
       },
-      items: [
+      "items": [
         ${3:Use gov-form-option snippet}
       ]
     }) }}$4
@@ -412,8 +412,8 @@
     'prefix': 'gov-form-option'
     'body': """
     {
-      value: "$1",
-      text: "$2"
+      "value": "$1",
+      "text": "$2"
     }$3
     """
   'Text input':
@@ -423,13 +423,13 @@
     'prefix': 'gov-form-input'
     'body': """
     {{ govukInput({
-      id: "$1",
-      name: "$1",
-      label: {
-        text: "${2:Label text}"
+      "id": "$1",
+      "name": "$1",
+      "label": {
+        "text": "${2:Label text}"
       },
-      hint: {
-        text: "${3:Hint text}"
+      "hint": {
+        "text": "${3:Hint text}"
       }
     }) }}$4
     """
@@ -440,13 +440,13 @@
     'prefix': 'gov-form-textarea'
     'body': """
     {{ govukTextarea({
-      id: "$1",
-      name: "$1",
-      label: {
-        text: "${2:Label text}"
+      "id": "$1",
+      "name": "$1",
+      "label": {
+        "text": "${2:Label text}"
       },
-      hint: {
-        text: "${3:Hint text}"
+      "hint": {
+        "text": "${3:Hint text}"
       }
     }) }}$4
     """
@@ -463,54 +463,54 @@
     'prefix': 'gov-form-address'
     'body': """
     {% call govukFieldset({
-      legend: {
-        text: "${1:What is your address?}",
-        classes: "govuk-fieldset__legend--${2:xl}",
-        isPageHeading: ${3:true}
+      "legend": {
+        "text": "${1:What is your address?}",
+        "classes": "${2:heading-xlarge}",
+        "isPageHeading": ${3:true}
       }
     }) %}
 
       {{ govukInput({
-        id: "address-line-1",
-        name: "address-line-1",
-        label: {
-          html: 'Building and street <span class="govuk-visually-hidden">line 1 of 2</span>'
+        "id": "address-line-1",
+        "name": "address-line-1",
+        "label": {
+          "html": 'Building and street <span class="visually-hidden">line 1 of 2</span>'
         }
       }) }}
 
       {{ govukInput({
-        id: "address-line-2",
-        name: "address-line-2",
-        label: {
-          html: '<span class="govuk-visually-hidden">Building and street line 2 of 2</span>'
+        "id": "address-line-2",
+        "name": "address-line-2",
+        "label": {
+          "html": '<span class="visually-hidden">Building and street line 2 of 2</span>'
         }
       }) }}
 
       {{ govukInput({
-        id: "address-town",
-        name: "address-town",
-        label: {
-          text: "Town or city"
+        "id": "address-town",
+        "name": "address-town",
+        "label": {
+          "text": "Town or city"
         },
-        classes: "govuk-!-width-two-thirds"
+        "classes": "form-control form-control-2-3"
       }) }}
 
       {{ govukInput({
-        id: "address-county",
-        name: "address-county",
-        label: {
-          text: "County"
+        "id": "address-county",
+        "name": "address-county",
+        "label": {
+          "text": "County"
         },
-        classes: "govuk-!-width-two-thirds"
+        "classes": "form-control form-control-2-3"
       }) }}
 
       {{ govukInput({
-        id: "address-postcode",
-        name: "address-postcode",
-        label: {
-          text: "Postcode"
+        "id": "address-postcode",
+        "name": "address-postcode",
+        "label": {
+          "text": "Postcode"
         },
-        classes: "govuk-input--width-10"
+        "classes": "form-control form-control-1-4"
       }) }}
 
     {% endcall %}$4
@@ -522,27 +522,27 @@
     'prefix': 'gov-form-date'
     'body': """
     {{ govukDateInput({
-      id: "${1:date}",
-      name: "${1:date}",
-      fieldset: {
-        legend: {
-          text: "${2:Legend text}",
-          isPageHeading: ${3:true},
-          classes: "govuk-fieldset__legend--${4:xl}"
+      "id": "${1:date}",
+      "name": "${1:date}",
+      "fieldset": {
+        "legend": {
+          "text": "${2:Legend text}",
+          "isPageHeading": ${3:true},
+          "classes": "${4:heading-xlarge}"
         }
       },
-      hint: {
-        text: "${5:For example, 31 3 1980}"
+      "hint": {
+        "text": "${5:For example, 31 3 1980}"
       },
-      items: [
+      "items": [
         {
-          name: "day"
+          "name": "day"
         },
         {
-          name: "month"
+          "name": "month"
         },
         {
-          name: "year"
+          "name": "year"
         }
       ]
     }) }}$6
@@ -554,10 +554,10 @@
     'prefix': 'gov-form-file'
     'body': """
     {{ govukFileUpload({
-      id: "${1:file-upload-1}",
-      name: "${1:file-upload-1}",
-      label: {
-        text: "${2:Upload a file}"
+      "id": "${1:file-upload-1}",
+      "name": "${1:file-upload-1}",
+      "label": {
+        "text": "${2:Upload a file}"
       }
     }) }}$3
     """
@@ -568,15 +568,15 @@
     'prefix': 'gov-form-nino'
     'body': """
     {{ govukInput({
-      id: "national-insurance-number",
-      name: "national-insurance-number",
-      label: {
-        text: "National insurance number"
+      "id": "national-insurance-number",
+      "name": "national-insurance-number",
+      "label": {
+        "text": "National insurance number"
       },
-      hint: {
-        text: "It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’."
+      "hint": {
+        "text": "It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’."
       },
-      classes: "govuk-input--width-10"
+      "classes": "form-control form-control-1-2"
     }) }}$1
     """
 
@@ -592,8 +592,8 @@
     'prefix': 'gov-back-link'
     'body': """
     {{ govukBackLink({
-      text: "${1:Back}",
-      href: "${2:#}"
+      "text": "${1:Back}",
+      "href": "${2:#}"
     }) }}$3
     """
   'Breadcrumbs':
@@ -603,7 +603,7 @@
     'prefix': 'gov-breadcrumbs'
     'body': """
     {{ govukBreadcrumbs({
-      items: [
+      "items": [
         ${1:Use gov-link-item snippet}
       ]
     }) }}$3
@@ -615,8 +615,8 @@
     'prefix': 'gov-details'
     'body': """
     {{ govukDetails({
-      summaryText: "${1:Summary text}",
-      text: "${2:Text}"
+      "summaryText": "${1:Summary text}",
+      "text": "${2:Text}"
     }) }}$3
     """
   'Error summary':
@@ -626,8 +626,8 @@
     'prefix': 'gov-error-summary'
     'body': """
     {{ govukErrorSummary({
-      titleText: "${1:There is a problem}",
-      errorList: [
+      "titleText": "${1:There is a problem}",
+      "errorList": [
         ${2:Use gov-link-item snippet}
       ]
     }) }}$3
@@ -647,7 +647,7 @@
     'prefix': 'gov-header'
     'body': """
     {{ govukHeader({
-      homepageUrl: "${1:#}"
+      "homepageUrl": "${1:#}"
     }) }}$2
     """
   'Inset text':
@@ -657,7 +657,7 @@
     'prefix': 'gov-inset-text'
     'body': """
     {{ govukInsetText({
-      text: "${1:Text}"
+      "text": "${1:Text}"
     }) }}$2
     """
   'Link item':
@@ -666,8 +666,8 @@
     'prefix': 'gov-link-item'
     'body': """
     {
-      text: "$1",
-      href: "$2"
+      "text": "$1",
+      "href": "$2"
     }$3
     """
   'Panel':
@@ -677,8 +677,8 @@
     'prefix': 'gov-panel'
     'body': """
     {{ govukPanel({
-      titleText: "${1:Title text}",
-      html: "Your reference number is<br><strong>$2</strong>"
+      "titleText": "${1:Title text}",
+      "html": "Your reference number is<br><strong>$2</strong>"
     }) }}$3
     """
   'Phase banner':
@@ -688,10 +688,10 @@
     'prefix': 'gov-phase-banner'
     'body': """
     {{ govukPhaseBanner({
-      tag: {
-        text: "${1:Alpha|Beta}"
+      "tag": {
+        "text": "${1:Alpha|Beta}"
       },
-      html: '${2:This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.}'
+      "html": '${2:This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.}'
     }) }}$3
     """
   'Skip link':
@@ -701,8 +701,8 @@
     'prefix': 'gov-skip-link'
     'body': """
     {{ govukSkipLink({
-      text: "Skip to main content",
-      href: "#content"
+      "text": "Skip to main content",
+      "href": "#content"
     }) }}$1
     """
   'Table':
@@ -712,39 +712,39 @@
     'prefix': 'gov-table'
     'body': """
     {{ govukTable({
-      caption: "${1:Caption text}",
-      firstCellIsHeader: ${2:false},
-      head: [
+      "caption": "${1:Caption text}",
+      "firstCellIsHeader": ${2:false},
+      "head": [
         {
-          text: "Column 1 heading"
+          "text": "Column 1 heading"
         },
         {
-          text: "Column 2 heading"
+          "text": "Column 2 heading"
         }
       ],
-      rows: [
+      "rows": [
         [
           {
-            text: "Row 1, column 1"
+            "text": "Row 1, column 1"
           },
           {
-            text: "Row 1, column 2"
+            "text": "Row 1, column 2"
           }
         ],
         [
           {
-            text: "Row 2, column 1"
+            "text": "Row 2, column 1"
           },
           {
-            text: "Row 2, column 2"
+            "text": "Row 2, column 2"
           }
         ],
         [
           {
-            text: "Row 3, column 1"
+            "text": "Row 3, column 1"
           },
           {
-            text: "Row 3, column 2"
+            "text": "Row 3, column 2"
           }
         ]
       ]
@@ -768,7 +768,7 @@
     'prefix': 'gov-tag'
     'body': """
     {{ govukTag({
-      text: "${1:Label text}"
+      "text": "${1:Label text}"
     }) }}$2
     """
   'Warning text':
@@ -778,7 +778,7 @@
     'prefix': 'gov-warning-text'
     'body': """
     {{ govukWarningText({
-      text: "${1:Warning text}",
-      iconFallbackText: "${2:Fallback text}"
+      "text": "${1:Warning text}",
+      "iconFallbackText": "${2:Fallback text}"
     }) }}$3
     """
