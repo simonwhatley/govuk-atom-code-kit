@@ -594,7 +594,7 @@
     'descriptionMoreURL': 'https://govuk-elements.herokuapp.com/'
     'prefix': 'gov-back-link'
     'body': """
-    <a href="${1:#}" class="back-link">Back</a>$2
+    <a href="${1:#}" class="link-back">Back</a>$2
     """
   'Breadcrumbs':
     'leftLabel': 'GOV.UK'
